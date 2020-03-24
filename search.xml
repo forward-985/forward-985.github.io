@@ -3,39 +3,11 @@
   <entry>
     <title>kuangbin专题一搜索</title>
     <url>/2020/03/24/kuangbin%E4%B8%93%E9%A2%98%E4%B8%80%E6%90%9C%E7%B4%A2/</url>
-    <content><![CDATA[<h2 id="kuangbin专题1搜索"><a href="#kuangbin专题1搜索" class="headerlink" title="# kuangbin专题1搜索"></a>#<center> kuangbin专题1搜索</center></h2><p>###poj1321棋盘问题(N皇后简单版)<br><a href="https://vjudge.net/problem/POJ-1321" target="_blank" rel="noopener">https://vjudge.net/problem/POJ-1321</a></p>
-<pre class="prettyprint lang-javascript">  
+    <content><![CDATA[<center>
+<font face="微软雅黑" color="littblue">poj1321棋盘问题(N皇后简单版)
 
-#include<iostream>//棋盘问题的dfs就在于，用dfs替代了多重循环
-#include<cstring>//递归完全可以替代循环
-using namespace std;//小心爆栈
-int n,k;
-char map1[10][10];
-int vis[100];//表示第i行的第j列摆放棋子了没
-int ans;//vis[i]=j
-
-void dfs(int x,int y,int r)//函数接口:反应的是一个状态
-{
-    if(r==k)//放好所有的棋子，返回
-    {
-        ans++;
-        return ;
-    }//怎么放，一行一行
-    for(int i=x;i<n;i++) { for(int j="0;j<n;j++)//从第一列开始看" if(map1[i][j]="='1'&&!vis[j])//" vis[j]="1;" dfs(i+1,j,r+1); i+1 } int main() while(cin>>n>>k&&n!=-1&&k!=-1)
-    {
-        ans=0;
-        memset(vis,0,sizeof(vis));
-        memset(map1,0,sizeof(map1));
-        for(int i=0;i<n;i++) for(int j="0;j<n;j++)" { cin>>map1[i][j];
-            if(map1[i][j]=='#')
-                map1[i][j]='1';
-        }
-        dfs(0,0,0);
-        cout<< ans<< endl;
-    }
-    return 0;
-}
-</n;i++)></n;i++)></cstring></iostream></pre>]]></content>
+<p><a href="https://vjudge.net/problem/POJ-1321" target="_blank" rel="noopener">https://vjudge.net/problem/POJ-1321</a></p></font></center><p></p>
+<pre><code><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;//棋盘问题的dfs就在于，用dfs替代了多重循环</span></span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstring&gt;//递归完全可以替代循环</span></span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;<span class="comment">//小心爆栈</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> n,k;</span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="keyword">char</span> map1[<span class="number">10</span>][<span class="number">10</span>];</span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> vis[<span class="number">100</span>];<span class="comment">//表示第i行的第j列摆放棋子了没</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> ans;<span class="comment">//vis[i]=j</span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">dfs</span><span class="params">(<span class="keyword">int</span> x,<span class="keyword">int</span> y,<span class="keyword">int</span> r)</span><span class="comment">//函数接口:反应的是一个状态</span></span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="function"></span>&#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="keyword">if</span>(r==k)<span class="comment">//放好所有的棋子，返回</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">    &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">        ans++;</span></pre></td></tr><tr><td class="code"><pre><span class="line">        <span class="keyword">return</span> ;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    &#125;<span class="comment">//怎么放，一行一行</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=x;i&lt;n;i++)</span></pre></td></tr><tr><td class="code"><pre><span class="line">    &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;n;j++)<span class="comment">//从第一列开始看</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">        &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">            <span class="keyword">if</span>(map1[i][j]==<span class="string">'1'</span>&amp;&amp;!vis[j])<span class="comment">//</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">            &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">                vis[j]=<span class="number">1</span>;</span></pre></td></tr><tr><td class="code"><pre><span class="line">                dfs(i+<span class="number">1</span>,j,r+<span class="number">1</span>);<span class="comment">//i+1</span></span></pre></td></tr><tr><td class="code"><pre><span class="line">                vis[j]=<span class="number">0</span>;</span></pre></td></tr><tr><td class="code"><pre><span class="line">            &#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line">        &#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    &#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="function"></span>&#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="keyword">while</span>(<span class="built_in">cin</span>&gt;&gt;n&gt;&gt;k&amp;&amp;n!=<span class="number">-1</span>&amp;&amp;k!=<span class="number">-1</span>)</span></pre></td></tr><tr><td class="code"><pre><span class="line">    &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">        ans=<span class="number">0</span>;</span></pre></td></tr><tr><td class="code"><pre><span class="line">        <span class="built_in">memset</span>(vis,<span class="number">0</span>,<span class="keyword">sizeof</span>(vis));</span></pre></td></tr><tr><td class="code"><pre><span class="line">        <span class="built_in">memset</span>(map1,<span class="number">0</span>,<span class="keyword">sizeof</span>(map1));</span></pre></td></tr><tr><td class="code"><pre><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;n;i++)</span></pre></td></tr><tr><td class="code"><pre><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;n;j++)</span></pre></td></tr><tr><td class="code"><pre><span class="line">        &#123;</span></pre></td></tr><tr><td class="code"><pre><span class="line">            <span class="built_in">cin</span>&gt;&gt;map1[i][j];</span></pre></td></tr><tr><td class="code"><pre><span class="line">            <span class="keyword">if</span>(map1[i][j]==<span class="string">'#'</span>)</span></pre></td></tr><tr><td class="code"><pre><span class="line">                map1[i][j]=<span class="string">'1'</span>;</span></pre></td></tr><tr><td class="code"><pre><span class="line">        &#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line">        dfs(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>);</span></pre></td></tr><tr><td class="code"><pre><span class="line">        <span class="built_in">cout</span>&lt;&lt; ans&lt;&lt; <span class="built_in">endl</span>;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    &#125;</span></pre></td></tr><tr><td class="code"><pre><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span></pre></td></tr><tr><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure></code></pre>]]></content>
   </entry>
   <entry>
     <title>为何使用补码</title>
