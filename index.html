@@ -213,6 +213,186 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/24/kuangbin%E4%B8%93%E9%A2%98%E4%B8%80%E6%90%9C%E7%B4%A2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/duolaameng.png">
+      <meta itemprop="name" content="王紫乾">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="lonely soul">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/03/24/kuangbin%E4%B8%93%E9%A2%98%E4%B8%80%E6%90%9C%E7%B4%A2/" class="post-title-link" itemprop="url">kuangbin专题一搜索</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-03-24 17:18:45 / 修改时间：20:44:53" itemprop="dateCreated datePublished" datetime="2020-03-24T17:18:45+08:00">2020-03-24</time>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>487</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="kuangbin专题1搜索"><a href="#kuangbin专题1搜索" class="headerlink" title="# kuangbin专题1搜索"></a>#<center> kuangbin专题1搜索</center></h2><p>###poj1321棋盘问题(N皇后简单版)<br><a href="https://vjudge.net/problem/POJ-1321" target="_blank" rel="noopener">https://vjudge.net/problem/POJ-1321</a></p>
+<pre class="prettyprint lang-javascript">  
+
+#include<iostream>//棋盘问题的dfs就在于，用dfs替代了多重循环
+#include<cstring>//递归完全可以替代循环
+using namespace std;//小心爆栈
+int n,k;
+char map1[10][10];
+int vis[100];//表示第i行的第j列摆放棋子了没
+int ans;//vis[i]=j
+
+void dfs(int x,int y,int r)//函数接口:反应的是一个状态
+{
+    if(r==k)//放好所有的棋子，返回
+    {
+        ans++;
+        return ;
+    }//怎么放，一行一行
+    for(int i=x;i<n;i++) { for(int j="0;j<n;j++)//从第一列开始看" if(map1[i][j]="='1'&&!vis[j])//" vis[j]="1;" dfs(i+1,j,r+1); i+1 } int main() while(cin>>n>>k&&n!=-1&&k!=-1)
+    {
+        ans=0;
+        memset(vis,0,sizeof(vis));
+        memset(map1,0,sizeof(map1));
+        for(int i=0;i<n;i++) for(int j="0;j<n;j++)" { cin>>map1[i][j];
+            if(map1[i][j]=='#')
+                map1[i][j]='1';
+        }
+        dfs(0,0,0);
+        cout<< ans<< endl;
+    }
+    return 0;
+}
+</n;i++)></n;i++)></cstring></iostream></pre>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/07/%E4%B8%BA%E4%BD%95%E4%BD%BF%E7%94%A8%E8%A1%A5%E7%A0%81/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/duolaameng.png">
+      <meta itemprop="name" content="王紫乾">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="lonely soul">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/03/07/%E4%B8%BA%E4%BD%95%E4%BD%BF%E7%94%A8%E8%A1%A5%E7%A0%81/" class="post-title-link" itemprop="url">为何使用补码</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-03-07 20:08:54" itemprop="dateCreated datePublished" datetime="2020-03-07T20:08:54+08:00">2020-03-07</time>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>534</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="我们为什么要用补码"><a href="#我们为什么要用补码" class="headerlink" title="我们为什么要用补码?"></a><center><font color="red">我们为什么要用补码?</font></center></h1><p>&emsp;&#8195;我们主要要解决的问题就是负数的表示，而众所周知，绝对值相等的两个正负数之和为0。</p>
+<p>&emsp;&#8195;假设我们有正数 0000 0000 0000 1111，我们如何表示其相反数呢？一般我们的思路是，找一个数，跟它相加的结果等于0，但是我们发现，要找出一个与它相加后结果等于0的数还是要略加思考一下的（因为要计算进位），所以，为何不找出一个与它相加后结果是1111 1111 1111 1111的数，然后该数+1即是我们所要的答案啦。</p>
+<p>&emsp;&#8195;于是，很容易的<br>    0000 0000 0000 1111 + 1111 1111 1111 0000 + 1 = 1111 1111 1111 1111 + 1 = （1）0000 0000 0000 0000<br>    一目了然，1111 1111 1111 0001 就是我们想要的答案了，那么我们是怎么得到这个相反数的呢？</p>
+<p>&emsp;&#8195;首先，找出一个数与它加起来结果是全1的，这个数便是它的反码，然后这个数再加1，这便是它的相反数了，也是我们说的补码。</p>
+<p>&emsp;&#8195;我们检验一下0的情况，0000 + 1111 + 1 =（1）0000，其中1111 + 1 = （1）0000 = 0000，即+0和-0的二进制表示均为0000。   </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/05/%E5%8A%A0%E6%B2%B9%EF%BC%81/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -540,7 +720,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">4</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -603,12 +783,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-area-chart"></i>
     </span>
-    <span title="站点总字数">1k</span>
+    <span title="站点总字数">2k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">1 分钟</span>
+    <span title="站点阅读时长">2 分钟</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v4.1.0
   </div>
